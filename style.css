@@ -1,0 +1,37 @@
+.head-area, .top-head-area{
+	width: 100%;
+	position: relative;
+}
+
+.top-head-area{
+	background-color: #ee002d;
+	height: 100px;
+}
+
+.logo a img{
+	width: 70px;
+	height: 70px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.fa-search:before {
+    content: "\f002";
+}
+#title{
+
+}
+
+.col-3{
+	height: auto;
+}

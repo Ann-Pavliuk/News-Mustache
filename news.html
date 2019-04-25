@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>news</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header class="head-area">
+		<div class="top-head-area">
+			<div class="container">
+				<div class="row">	
+					<div class="col-12">
+						<div class="top-header-content d-flex align-items-center justify-content-between">
+							<div class="logo mt-3">
+								<a href="#">
+									<img src="img/logo.jpg">
+								</a>
+							</div>
+						</div>	
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row" id="row">	
+		</div>
+	</div>
+
+	<script id="temp" type="text/template">
+		{{#articles}}
+			<div class="col-12 col-md-6 col-lg-3 d-flex mt-4">
+				<div class="card  flex-fill">
+					<img class="card-img-top" src={{urlToImage}}>
+	
+					<div class="card-body">
+						<h4 class="card-title">
+							{{author}}
+						</h4>
+						<p class="card-text">
+							{{description}}
+						</p>
+						<a class="btn btn-primary" href="{{url}}">
+							{{title}}
+						</a>
+					</div>
+				</div>
+			</div>
+		{{/articles}}
+	</script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
